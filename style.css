@@ -2,12 +2,50 @@ body {
   font-family: Arial, sans-serif;
   background-color: #111;
   color: #eee;
+  margin: 0;
   padding: 20px;
 }
-.jogo {
-  background: #222;
-  padding: 10px;
-  margin-bottom: 10px;
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
   border-radius: 5px;
 }
 
+.tab-button.active {
+  background-color: #007bff;
+}
+
+.jogo {
+  background: #222;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.jogo img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.jogo strong {
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+.jogo .info {
+  flex-grow: 1;
+}
